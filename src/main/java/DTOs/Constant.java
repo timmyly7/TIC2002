@@ -19,4 +19,13 @@ public class Constant {
     public static final Integer SEARCH_DATE_TYPE_AFTER = 1;
     public static final Integer SEARCH_DATE_TYPE_BEFORE = 2;
 
+    public static final String OBJECT_TYPE_TODO ="TODO";
+    public static final String OBJECT_TYPE_SCHEDULE ="SCHEDULE";
+    public static final String OBJECT_TYPE_INCOME ="INCOME";
+    public static final String OBJECT_TYPE_EXPENSE ="EXPENSE";
+
+    public static final String ACTION_TYPE_ADD ="ADD";
+    public static final String ACTION_TYPE_EDIT ="EDIT";
+    public static final String ACTION_TYPE_DELETE ="DELETE";
+
 }

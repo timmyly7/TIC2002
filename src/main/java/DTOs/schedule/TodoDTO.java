@@ -34,7 +34,7 @@ public class TodoDTO extends TaskDTO{
     public String toString() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MMM yyyy hh:mm");
         String message = "Todo Event id = " + getId() +" --> Description : "+getDescription()+
-                "Deadline = " + simpleDateFormat.format(deadline) ;
+                "\nDeadline = " + simpleDateFormat.format(deadline) ;
 
         if (getStatus() ==Constant.STATUS_DONE){
             message  = Constant.ANSI_GREEN+ message + " This todo is already done!";
