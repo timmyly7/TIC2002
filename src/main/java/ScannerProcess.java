@@ -702,10 +702,11 @@ public class ScannerProcess {
 
     private static void processHelpCommand(String[] commentList){
         if (commentList.length==1){
-            System.out.println("Help command list :\n 1.help -all : show all the commands." +
-                    "\n 2.help -show : show command to display records." +
-                    "\n 3.help -add : add command to add records" +
-                    "\n 4.help -edit : edit command to update records" +
+            System.out.println("Help command list :" +
+                    "\n 1.help -show : show command to display records." +
+                    "\n 2.help -add : add command to add records" +
+                    "\n 3.help -edit : edit command to update records" +
+                    "\n 4.help -delete : delete command to update records" +
                     "\n 5.help -export : export command to export records to file" +
                     "\n 6.help -import : import command to import records from file");
         }else {
@@ -747,16 +748,27 @@ public class ScannerProcess {
                     break;
                 case "export" :
                     System.out.println("This command allows user to export the records to specific path\n" +
-                            "Edit command syntax : export -{path} -{filename}\n" +
+                            "Export command syntax : export -{path} -{filename}\n" +
                             "path and filename are mandatory fields as list below:\n" +
                             "Example command of export command : 'export -C:\\Users\\Timmy\\Desktop\\School\\2018\\Sem 1\\TIC 2002 Java -record file'");
                     break;
 
+
                 case "import" :
                     System.out.println("This command allows user to import the records from specific path\n" +
-                            "Edit command syntax : import -{path} -{filename}\n" +
+                            "Import command syntax : import -{path} -{filename}\n" +
                             "path and filename are mandatory fields as list below:\n" +
                             "Example command of export command : 'import -C:\\Users\\Timmy\\Desktop\\School\\2018\\Sem 1\\TIC 2002 Java -record file'");
+                    break;
+                case "done" :
+                    System.out.println("This command allows user to update the todo status by id\n" +
+                            "Edit command syntax : done -{id}\n" +
+                            "Example command of done command : 'done -1'");
+                    break;
+                case "delete" :
+                    System.out.println("This command allows user to delete the records by type and id\n" +
+                            "Delete command syntax : del -{type} -{id}\n" +
+                            "Example command of export command : 'del -todo -1'");
                     break;
             }
         }

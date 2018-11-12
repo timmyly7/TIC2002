@@ -3,10 +3,7 @@ import DTOs.expenditure.ExpenditureDTO;
 import DTOs.schedule.ScheduleDTO;
 import DTOs.schedule.TaskDTO;
 import DTOs.schedule.TodoDTO;
-import com.sun.xml.internal.bind.v2.TODO;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

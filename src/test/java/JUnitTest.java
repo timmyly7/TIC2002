@@ -119,4 +119,25 @@ public class JUnitTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testHelp() {
+
+        try {
+            String data = "help";
+            String exit = "exit";
+            InputStream stdin = System.in;
+            System.setIn(new ByteArrayInputStream(data.getBytes()));
+            System.setIn(new ByteArrayInputStream(exit.getBytes()));
+            Scanner scanner = new Scanner(System.in);
+            System.setIn(stdin);
+            ScannerProcess.processIncomingMessage(scanner);
+        } catch (InvalidDataException e) {
+            e.printStackTrace();
+        } catch (InvalidDateRangeException e) {
+            e.printStackTrace();
+        } catch (InvalidCommandException e) {
+            e.printStackTrace();
+        }
+    }
 }
