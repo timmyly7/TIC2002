@@ -24,7 +24,7 @@ public class MainClass {
                     "1.Scheduler \n2.Expense Recorder\nIf you need more help, please type " +
                     Constant.ANSI_PURPLE+"'help'" +
                     Constant.ANSI_CYAN+" for more description.\n");
-            listStorage =  HelpFunctions.readFromExcelFile(excelPath);
+//            listStorage =  HelpFunctions.readFromExcelFile(excelPath);
             Scanner scanner = new Scanner(System.in);
 
 
@@ -35,10 +35,8 @@ public class MainClass {
             ScannerProcess.processIncomingMessage(scanner);
 
 
-            HelpFunctions.createExcel(listStorage,excelPath);
+//            HelpFunctions.createExcel(listStorage,excelPath);
         }catch (IOException e){
-            e.printStackTrace();
-        }catch (InvalidFormatException e){
             e.printStackTrace();
         }catch (InvalidDateRangeException e){
             e.printStackTrace();
